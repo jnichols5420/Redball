@@ -63,7 +63,24 @@ redball.top= redball.top -5;
 redball.top= redball.top -5;
 redball.top= redball.top -5;
 redball.top= redball.top -5;
+}
+<!--Move Rectangle-->
+function moverectangle()
+{
 <!--Move Right-->
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
 redball.left= redball.left +5;
 redball.left= redball.left +5;
 redball.left= redball.left +5;
@@ -87,6 +104,19 @@ redball.left= redball.left -5;
 redball.left= redball.left -5;
 redball.left= redball.left -5;
 redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
 <!--Move Up-->
 redball.top= redball.top -5;
 redball.top= redball.top -5;
@@ -96,6 +126,64 @@ redball.top= redball.top -5;
 redball.top= redball.top -5;
 redball.top= redball.top -5;
 }
+<!--Move Diagonal-->
+function movediagonalright()
+{
+<!--Move Right and Down-->
+redball.left= redball.left +5;
+redball.top= redball.top +5;
+}
+<!--Move Diagonal-->
+function movediagonalleft()
+{
+<!--Move Left and Down-->
+redball.left= redball.left -5;
+redball.top= redball.top +5;
+}
+<!--Move Triangle-->
+function movetriangle()
+{
+<!--Move Left and Down-->
+redball.left= redball.left +5;
+redball.top= redball.top +5;
+redball.left= redball.left +5;
+redball.top= redball.top +5;
+redball.left= redball.left +5;
+redball.top= redball.top +5;
+redball.left= redball.left +5;
+redball.top= redball.top +5;
+redball.left= redball.left +5;
+redball.top= redball.top +5;
+redball.left= redball.left +5;
+redball.top= redball.top +5;
+redball.left= redball.left +5;
+redball.top= redball.top +5;
+<!--Below is move left-->
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+<!--Move Up and Right-->
+redball.left= redball.left +5;
+redball.top= redball.top -5;
+redball.left= redball.left +5;
+redball.top= redball.top -5;
+redball.left= redball.left +5;
+redball.top= redball.top -5;
+redball.left= redball.left +5;
+redball.top= redball.top -5;
+redball.left= redball.left +5;
+redball.top= redball.top -5;
+redball.left= redball.left +5;
+redball.top= redball.top -5;
+redball.left= redball.left +5;
+}
+
 </script>
 <title>Red Ball part 1</title>
 <body>
@@ -105,7 +193,9 @@ redball.top= redball.top -5;
 <button onclick="moveright();">Move Right</button>
 <button onclick="moveleft();">Move Left</button>
 <button onclick="movesquare();">Move Square</button>
-
+<button onclick="movediagonalright();">Move Diagonal Down Right</button>
+<button onclick="movediagonalleft();">Move Diagonal Down Left</button>
+<button onclick="movetriangle();">Move Triangle</button>
 
 <img src="redball.jpg" id="redball" width="150px" height="200px"/>
 
