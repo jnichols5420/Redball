@@ -3,14 +3,110 @@
 <head>
 <script src="http://lrn.icstars.org/redball.js"></script>
 <script>
+<!--Below is alert 1-->
 function sayhello()
 {
 alert("Hello Jeremy");
 }
-</script> 
+<!--Below is move left-->
+function moveleft()
+{
+redball.left= redball.left -5;
+}
+<!--Below is right-->
+function moveright()
+{
+redball.left= redball.left +5;
+}
+<!--Move Up-->
+function movetop()
+{
+redball.top= redball.top -5;
+}
+<!--Move Down-->
+function movedown()
+{
+redball.top= redball.top +5;
+}
+<!--Move Square-->
+function movesquare()
+{
+<!--Move Right-->
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+<!--Move Down-->
+redball.top= redball.top +5;
+redball.top= redball.top +5;
+redball.top= redball.top +5;
+redball.top= redball.top +5;
+redball.top= redball.top +5;
+redball.top= redball.top +5;
+redball.top= redball.top +5;
+<!--Move Left-->
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+<!--Move Up-->
+redball.top= redball.top -5;
+redball.top= redball.top -5;
+redball.top= redball.top -5;
+redball.top= redball.top -5;
+redball.top= redball.top -5;
+redball.top= redball.top -5;
+redball.top= redball.top -5;
+<!--Move Right-->
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+redball.left= redball.left +5;
+<!--Move Down-->
+redball.top= redball.top +5;
+redball.top= redball.top +5;
+redball.top= redball.top +5;
+redball.top= redball.top +5;
+redball.top= redball.top +5;
+redball.top= redball.top +5;
+redball.top= redball.top +5;
+<!--Move Left-->
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+redball.left= redball.left -5;
+<!--Move Up-->
+redball.top= redball.top -5;
+redball.top= redball.top -5;
+redball.top= redball.top -5;
+redball.top= redball.top -5;
+redball.top= redball.top -5;
+redball.top= redball.top -5;
+redball.top= redball.top -5;
+}
+</script>
 <title>Red Ball part 1</title>
 <body>
 <button onclick="sayhello();">Hello World</button>
+<button onclick="movetop();">Move Up</button>
+<button onclick="movedown();">Move Down</button>
+<button onclick="moveright();">Move Right</button>
+<button onclick="moveleft();">Move Left</button>
+<button onclick="movesquare();">Move Square</button>
+
+
 <img src="redball.jpg" id="redball" width="150px" height="200px"/>
 
 </body>
