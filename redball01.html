@@ -3,17 +3,17 @@
 <head>
 <script src="http://lrn.icstars.org/redball.js"></script>
 <script>
+
 <!--Below is alert 1-->
-function sayhello()
-{
-alert("Hello Jeremy");
-}
+function sayhello(){
+alert("Hello Jeremy");}
+<!--Primitive Function Start-->
 <!--Below is move left-->
 function moveleft()
 {
 redball.left= redball.left -5;
 }
-<!--Below is right-->
+<!--Below is move right-->
 function moveright()
 {
 redball.left= redball.left +5;
@@ -28,175 +28,286 @@ function movedown()
 {
 redball.top= redball.top +5;
 }
-<!--Move Square-->
+<!--Primitive Function End-->
+<!--Move Square User Function/Business Function-->
 function movesquare()
 {
 <!--Move Right-->
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
 <!--Move Down-->
-redball.top= redball.top +5;
-redball.top= redball.top +5;
-redball.top= redball.top +5;
-redball.top= redball.top +5;
-redball.top= redball.top +5;
-redball.top= redball.top +5;
-redball.top= redball.top +5;
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
 <!--Move Left-->
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
 <!--Move Up-->
-redball.top= redball.top -5;
-redball.top= redball.top -5;
-redball.top= redball.top -5;
-redball.top= redball.top -5;
-redball.top= redball.top -5;
-redball.top= redball.top -5;
-redball.top= redball.top -5;
+movetop();
+movetop();
+movetop();
+movetop();
+movetop();
+movetop();
+movetop();
 }
-<!--Move Rectangle-->
+<!--Move Rectangle User Function/Business Function-->
 function moverectangle()
 {
 <!--Move Right-->
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
-redball.left= redball.left +5;
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
 <!--Move Down-->
-redball.top= redball.top +5;
-redball.top= redball.top +5;
-redball.top= redball.top +5;
-redball.top= redball.top +5;
-redball.top= redball.top +5;
-redball.top= redball.top +5;
-redball.top= redball.top +5;
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
 <!--Move Left-->
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
 <!--Move Up-->
-redball.top= redball.top -5;
-redball.top= redball.top -5;
-redball.top= redball.top -5;
-redball.top= redball.top -5;
-redball.top= redball.top -5;
-redball.top= redball.top -5;
-redball.top= redball.top -5;
+movetop();
+movetop();
+movetop();
+movetop();
+movetop();
+movetop();
+movetop();
 }
-<!--Move Diagonal-->
+<!--Move Diagonal Right User Function/Business Function-->
 function movediagonalright()
 {
 <!--Move Right and Down-->
-redball.left= redball.left +5;
-redball.top= redball.top +5;
+moveright();
+movedown();
 }
-<!--Move Diagonal-->
+<!--Move Diagonal Left User Function/Business Function-->
 function movediagonalleft()
 {
-<!--Move Left and Down-->
-redball.left= redball.left -5;
-redball.top= redball.top +5;
+<!--Move Left and Down User Function/Business Function-->
+moveleft();
+movedown();
 }
-<!--Move Triangle-->
+<!--Move Triangle User Function/Business Function-->
 function movetriangle()
 {
-<!--Move Left and Down-->
-redball.left= redball.left +5;
-redball.top= redball.top +5;
-redball.left= redball.left +5;
-redball.top= redball.top +5;
-redball.left= redball.left +5;
-redball.top= redball.top +5;
-redball.left= redball.left +5;
-redball.top= redball.top +5;
-redball.left= redball.left +5;
-redball.top= redball.top +5;
-redball.left= redball.left +5;
-redball.top= redball.top +5;
-redball.left= redball.left +5;
-redball.top= redball.top +5;
+<!--Move Right and Down-->
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
 <!--Below is move left-->
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
-redball.left= redball.left -5;
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
 <!--Move Up and Right-->
-redball.left= redball.left +5;
-redball.top= redball.top -5;
-redball.left= redball.left +5;
-redball.top= redball.top -5;
-redball.left= redball.left +5;
-redball.top= redball.top -5;
-redball.left= redball.left +5;
-redball.top= redball.top -5;
-redball.left= redball.left +5;
-redball.top= redball.top -5;
-redball.left= redball.left +5;
-redball.top= redball.top -5;
-redball.left= redball.left +5;
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
 }
-
+<!--Move Diamond User Function/Business Function-->
+function movediamond()
+{
+<!--Move Left and Down-->
+moveleft();
+movedown();
+moveleft();
+movedown();
+moveleft();
+movedown();
+moveleft();
+movedown();
+moveleft();
+movedown();
+moveleft();
+movedown();
+moveleft();
+movedown();
+<!--Move Down and Right-->
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+<!--Move Up and Right-->
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+<!--Move Up and Left-->
+moveleft();
+movetop();
+moveleft();
+movetop();
+moveleft();
+movetop();
+moveleft();
+movetop();
+moveleft();
+movetop();
+moveleft();
+movetop();
+moveleft();
+movetop();
+}
+<!--Move Line Segment User Function/Business Function-->
+function movelineseg()
+{
+<!--Move Right-->
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+<!--Move Down-->
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+<!--Move Left-->
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+<!--Move Up-->
+movetop();
+movetop();
+movetop();
+movetop();
+}
 </script>
+
 <title>Red Ball part 1</title>
+
 <body>
+
 <button onclick="sayhello();">Hello World</button>
 <button onclick="movetop();">Move Up</button>
 <button onclick="movedown();">Move Down</button>
 <button onclick="moveright();">Move Right</button>
 <button onclick="moveleft();">Move Left</button>
-<button onclick="movediagonalright();">Move Diagonal Down Right</button>
-<button onclick="movediagonalleft();">Move Diagonal Down Left</button>
+<button onclick="movediagonalright();">Move Diagonal Right</button>
+<button onclick="movediagonalleft();">Move Diagonal Left</button>
 <button onclick="movetriangle();">Move Triangle</button>
 <button onclick="moverectangle();">Move Rectangle</button>
 <button onclick="movesquare();">Move Square</button>
+<button onclick="movediamond();">Move Diamond</button>
+<button onclick="movelineseg();">Move Line Segment</button>
 <img src="redball.jpg" id="redball" width="150px" height="200px"/>
 
 </body>
