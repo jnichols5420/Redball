@@ -1,0 +1,679 @@
+<!doctype html>
+<html>
+<head>
+<script src="http://lrn.icstars.org/redball.js"></script>
+<script>
+
+<!--Below is alert 1-->
+function sayhello(){
+alert("Hello Jeremy");}
+<!--Primitive Function Start-->
+<!--Below is move left-->
+function moveleft()
+{
+redball.left= redball.left -5;
+}
+<!--Below is move right-->
+function moveright()
+{
+redball.left= redball.left +5;
+}
+<!--Move Up-->
+function movetop()
+{
+redball.top= redball.top -5;
+}
+<!--Move Down-->
+function movedown()
+{
+redball.top= redball.top +5;
+}
+<!--Primitive Function End-->
+
+
+<!--Move Square User Function/Business Function-->
+function movesquare(){
+<!--Move Right-->
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+<!--Move Down-->
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+<!--Move Left-->
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+<!--Move Up-->
+movetop();
+movetop();
+movetop();
+movetop();
+movetop();
+movetop();
+movetop();
+}
+
+<!--Move Rectangle User Function/Business Function-->
+function moverectangle(){
+<!--Move Right-->
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+<!--Move Down-->
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+<!--Move Left-->
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+<!--Move Up-->
+movetop();
+movetop();
+movetop();
+movetop();
+movetop();
+movetop();
+movetop();
+}
+
+<!--Move Diagonal Left Up User Function/Business Function-->
+function movediaglu(){
+redball.top= redball.top -5;
+redball.left= redball.left -5;
+}
+<!--Move Up and Left-->
+
+<!--Move Diagonal Right Down User Function/Business Function-->
+function movediagrd(){
+redball.left= redball.left +5;
+redball.top= redball.top +5;
+}
+<!--Move Down and Right-->
+
+<!--Move Diagonal Right Up User Function/Business Function-->
+function movediagru(){
+redball.top= redball.top -5;
+redball.left= redball.left +5;
+}
+<!--Move Up and Right-->
+
+<!--Move Diagonal Left User Function/Business Function-->
+function movediagld(){
+redball.left= redball.left -5;
+redball.top= redball.top +5;
+}
+<!--Move Down and Left-->
+
+<!--Move Triangle User Function/Business Function-->
+function movetriangle(){
+<!--Move Right and Down-->
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+<!--Below is move left-->
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+<!--Move Up and Right-->
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+}
+
+<!--Move Diamond User Function/Business Function-->
+function movediamond(){
+<!--Move Left and Down-->
+moveleft();
+movedown();
+moveleft();
+movedown();
+moveleft();
+movedown();
+moveleft();
+movedown();
+moveleft();
+movedown();
+moveleft();
+movedown();
+moveleft();
+movedown();
+<!--Move Down and Right-->
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+<!--Move Up and Right-->
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+moveright();
+movetop();
+<!--Move Up and Left-->
+moveleft();
+movetop();
+moveleft();
+movetop();
+moveleft();
+movetop();
+moveleft();
+movetop();
+moveleft();
+movetop();
+moveleft();
+movetop();
+moveleft();
+movetop();
+}
+
+<!--Move Bounce User Function/Business Function-->
+function movebounce(){
+<!--Move Up Left-->
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+movediaglu();
+<!--Diag UP Right-->
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+<!--Diag Down Right-->
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+<!--Move up Diag-->
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+movediagru();
+<!--Move Down Right-->
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+movediagrd();
+<!--Move Down Left-->
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+movediagld();
+}
+
+</script>
+
+<title>Red Ball part 2</title>
+
+<body>
+
+<button onclick="sayhello();">Hello World</button>
+<button onclick="movetop();">Move Up</button>
+<button onclick="movedown();">Move Down</button>
+<button onclick="moveright();">Move Right</button>
+<button onclick="moveleft();">Move Left</button>
+<button onclick="movetriangle();">Move Triangle</button>
+<button onclick="moverectangle();">Move Rectangle</button>
+<button onclick="movesquare();">Move Square</button>
+<button onclick="movediamond();">Move Diamond</button>
+<button onclick="movediagrd();">Move Diag Right Down</button>
+<button onclick="movediagld();">Move Diag Left Down</button>
+<button onclick="movediaglu();">Move Diag Left Up</button>
+<button onclick="movediagru();">Move Diag Right Up</button>
+<button onclick="movebounce();">Move Bounce</button>
+
+<img src="redball.jpg" id="redball" width="150px" height="200px"/>
+
+</body>
+</html>

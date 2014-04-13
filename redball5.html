@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#redball 
+{
+	position:absolute;
+	left:200px;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+function Ball (cssid)
+{
+<!-- Move Ball Right Below-->
+	this.moveright=function()
+	{
+		var pos=$(cssid).offset();
+		console.log("left "+pos.left);
+		console.log("top "+pos.top);
+		pos.left=pos.left+20
+		$(cssid).offset(pos);
+	}
+<!-- Move Ball Left Below-->
+	this.moveleft=function()
+	{
+		var pos=$(cssid).offset();
+		console.log("left "+pos.left);
+		console.log("top "+pos.top);
+		pos.left=pos.left-20
+		$(cssid).offset(pos);
+	}
+<!-- Move Ball Down Below-->
+	this.movedown=function()
+	{
+		var pos=$(cssid).offset();
+		console.log("top "+pos.top);
+		pos.top=pos.top+20
+		$(cssid).offset(pos);
+	}
+<!-- Move Ball Diagonal Left Up Below-->
+	this.movediaglu=function()
+	{
+		var pos=$(cssid).offset();
+		console.log("left "+pos.left);
+		console.log("top "+pos.top);
+		console.log("left "+pos.left);
+		pos.left=pos.left-20
+		pos.top=pos.top-20
+		$(cssid).offset(pos);
+	}
+	<!-- Move Ball Diagonal Left Down Below-->
+	this.movediagld=function()
+	{
+		var pos=$(cssid).offset();
+		console.log("left "+pos.left);
+		console.log("top "+pos.top);
+		console.log("left "+pos.left);
+		pos.left=pos.left-20
+		pos.top=pos.top+20
+		$(cssid).offset(pos);
+	}
+	<!-- Move Ball Diagonal Right Down Below-->
+	this.movediagrd=function()
+	{
+		var pos=$(cssid).offset();
+		console.log("left "+pos.left);
+		console.log("top "+pos.top);
+		console.log("left "+pos.left);
+		pos.left=pos.left+20
+		pos.top=pos.top+20
+		$(cssid).offset(pos);
+	}
+	<!-- Move Ball Diagonal Right Up Below-->
+	this.movediagdru=function()
+	{
+		var pos=$(cssid).offset();
+		console.log("left "+pos.left);
+		console.log("top "+pos.top);
+		console.log("left "+pos.left);
+		pos.left=pos.left-20
+		pos.top=pos.top+20
+		$(cssid).offset(pos);
+	}
+	<!-- Move Ball UP Below-->
+	this.moveup=function()
+	{
+		var pos=$(cssid).offset();
+		console.log("top "+pos.top);
+		pos.top=pos.top-20
+		$(cssid).offset(pos);
+	}
+}
+var redball=new Ball("#redball");
+var greenball=new Ball("#greenball");
+var orangeball=new Ball("#orangeball");
+var pinkball=new Ball("#pinkball");
+var blueball=new Ball("#blueball");
+var purpleball=new Ball("#purpleball");
+</script>
+</head>
+<body>
+<img src="http://jamessocialconscience.files.wordpress.com/2013/10/social-conscience-fair-trade-sports-balls-right-to-play-red-ball-011.jpg" id="redball" class="ball" alt="Dont Stress" height="150" width="150"id="redball"/>
+<img src="http://www.superballs.com/images/oops/SuperBall_Mini_green.jpg" id="greenball" class="ball" alt="Dont Stress" height="150" width="150"id="greenball"/>
+<img src="http://missteenairdrie.com/files/2013/07/3.jpg" id="orangeball" class="ball" alt="Dont Stress" height="150" width="150"id="orangeball"/>
+<img src="http://www.hedstromspecialty.com/upload/images/2013_Catalog_Images/bumple/Bumple_Pink_copy.jpg" id="pinkball" class="ball" alt="Dont Stress" height="150" width="150"id="pinkball"/>
+<img src="http://pitt.edu/~bsb44/images/purpleball.jpg" id="purpleball" class="ball" alt="Dont Stress" height="150" width="150"id="purpleball"/>
+<img src="http://crazygamerblog.files.wordpress.com/2012/04/exercise_ball.jpg" id="blueball" class="ball" alt="Dont Stress" height="150" width="150"id="blueball"/>
+</body>
+</html>

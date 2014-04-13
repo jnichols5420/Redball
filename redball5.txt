@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#redball 
+{
+position:absolute;
+}
+</style>
+<
+</head>
+<body>
+
+</body>
+</html>
